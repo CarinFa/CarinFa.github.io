@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Sophia Reis</title>
+    <link rel="icon" type="image/x-icon" href="favicon2.ico">
+    <meta property="og:title" content="Sophia Reis" />
+    <meta property="og:type" content="Landing Page" />
+    <meta property="og:url" content="https://CarinFa.github.io" />
+    <meta property="og:image" content="https://CarinFa.github.io/fondo-inicio.jpg" />
+    <meta property="og:description" content="Bienvenid@s a mi Portfolio Profesional" />
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Sophia Reis</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <h2>Sophia Reis</h2>
+                <h3>·Developer Web·</h3>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+            <div class="contenedor-foto">
+            <img src="sobremi.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">·Sobre Mi·</p>
+            <h2>Soy <span>Sophia Reis</span></h2>
+            <h3>Developer Web</h3>
+            <p>Lorem ipsum felis efficitur, consectetur adipiscing elit.Suspendisse id ante vel mauris porta.Etiam aliquet risus 
+            sed nisl gravida auctor.Proin vitae fermentum ex, suscipit ullamcorper est.</p>
+            <p>Lorem ipsum felis efficitur, fringilla purus quis, luctus nisl.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!--HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Photoshop</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso4"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">·SERVICIOS·</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                  <br>
+                  Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación PHP</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                  <br>
+                  Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Diseño Gráfico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                    <br>
+                    Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                    <br>
+                    Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Posicionamiento SEO</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                    <br>
+                    Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-keyboard"></i></span>
+                <h4>Soporte Técnico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <P>Lorem ipsum felis efficitur, fringilla purus quis luctus.
+                    <br>
+                    Praesent nec congue augue, sed ultrices.
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">·PROYECTOS·</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect1.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 1</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect2.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 2</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect3.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 3</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect4.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 4</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect5.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 5</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="proyect6.jpg" alt="">
+                <div class="info">
+                    <h4>Proyecto 6</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">·CONTACTO·</h3>
+        <div class="tarjetas">
+            <div class="datos">
+                <span class="icono"><i class="fa-solid fa-house"></i></span>
+                <h4>Ubicación</h4>
+                <P>Ayacucho 15, Piriápolis, URU</P>
+            </div>
+            <div class="datos">
+                <span class="icono"><i class="fa-solid fa-phone"></i></span>
+                <h4>Teléfono</h4>
+                <a href="tel:(+598) 92 639 811">(+598) 92 639 811</a>
+            </div>
+            <div class="datos">
+                <span class="icono"><i class="fa-solid fa-envelope"></i></span>
+                <h4>Email</h4>
+                <a href="sophia.reis@example.com">sophia.reis@example.com</a>
+            </div>
+            <div class="datos">
+                <span class="icono"><i class="fa-solid fa-hashtag"></i></span>
+                <h4>Social Media</h4>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-form">
+            <form action="" class="form" id="form" method="get">
+                <div class="form-control">
+                    <input type="text" name="nombre-completo"  placeholder="Nombre Completo" id="nombre-completo" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="email"  placeholder="Email" id="email" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="tema"  placeholder="Tema" id="tema"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <textarea id="mensaje" name="mensaje" cols="30" rows="5" placeholder="Mensaje..." ></textarea>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                    <button type="submit" value="Enviar" id="btn-validar" class="btn-enviar">Enviar Mensaje</button>
+                <p class="mensajeCorrecto" id="mensajeCorrecto"></p>
+            </form>
+        </div>
+    </section>
+
+     <!--FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
